@@ -1,0 +1,68 @@
+.pageHome--card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-bottom: 57%;
+  border-radius: 2px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.pageHome--bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+}
+
+.pageHome--overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  z-index: 2;
+}
+
+.pageHome--overlay--content {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+
+.pageHome--overlay--content img {
+  margin: 0 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.pageHome--overlay--content--text-wrap {
+  width: calc(100% - 75px);
+}
+
+.pageHome--overlay--content--title,
+.pageHome--overlay--content--author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.pageHome--overlay--content--title {
+  color: #e8e8e8;
+  margin-bottom: 2px;
+  font-size: 15px;
+}
+
+.pageHome--overlay--content--author {
+  color: #c7c7ce;
+  font-size: 14px;
+}
